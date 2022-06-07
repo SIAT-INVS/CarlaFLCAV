@@ -1,6 +1,5 @@
 ## FLYolo: Federated Learning You Look Only Once (FLYolo)
 Federated Learning You Look Only Once (FLYolo) is based on Carla Simulation and Yolov5 (See yolov5/README.md). 
-FLYOLO can reproduce results in the following papers:
 
 ## Install FLYOLO
 ```
