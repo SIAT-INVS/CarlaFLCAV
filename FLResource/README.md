@@ -1,6 +1,5 @@
 ## FLResource: Federated Learning Resource Allocation
 Federated Learning Resource Allocation (FLResource) is based on Carla Simulation and CVXPY (See https://www.cvxpy.org/). 
-FLResource can reproduce results in the following papers:
 
 ## Install dependencies
 ```
