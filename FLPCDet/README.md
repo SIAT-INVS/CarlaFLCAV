@@ -1,6 +1,5 @@
 ## FLPCDet: Federated Learning Point CLoud Detection
 Federated Learning Point CLoud Detection (FLPCDet) is based on Carla Simulation and OpenPCDet (See README_PCDET.md). 
-FLPCDET can reproduce results in the following papers:
 
 ## Install FLPCDet
 * FLPCDet is based on OpenPCDet (https://github.com/open-mmlab/OpenPCDet)
