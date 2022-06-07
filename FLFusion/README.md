@@ -1,6 +1,5 @@
 ## FLFusion: Federated Learning With Vehicle-Road Fusion 
 Federated Learning Vehicle-to-infrastructure Fusion (FLFusion) is based on Carla Simulation and CARLA_INVS (See https://github.com/zijianzhang/CARLA_INVS). 
-FLFUSION can reproduce results in the following papers:
 
 ## Quick Start
 
