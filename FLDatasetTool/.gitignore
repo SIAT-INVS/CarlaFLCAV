@@ -1,0 +1,7 @@
+.idea
+.vscode
+__pycache__
+recorder/__pycache__
+raw_data/*
+dataset/*
+docs

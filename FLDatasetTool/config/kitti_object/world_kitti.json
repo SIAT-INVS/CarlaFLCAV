@@ -1,0 +1,11 @@
+{
+    "map": "Town02",
+    "spectator_pose": {"x": 100, "y": -150.0, "z": 150, "roll": 0, "pitch": 60.0, "yaw": -90.0},
+    "world_settings":
+    {
+        "fixed_delta_seconds": 0.1,
+        "max_substep_delta_time": 0.01,
+        "max_substeps": 16
+    },
+    "actor_settings": "actor_kitti.json"
+}

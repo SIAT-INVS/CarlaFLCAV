@@ -1,0 +1,49 @@
+{
+    "sensors":
+    [
+        {
+            "type": "sensor.camera.rgb",
+            "name": "image_2",
+            "spawn_point": {"x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "image_size_x": 800,
+            "image_size_y": 600,
+            "fov": 90.0
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "name": "velodyne_16",
+            "spawn_point": {"x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "range": 100,
+            "channels": 16,
+            "points_per_second": 300000,
+            "upper_fov": 15.0,
+            "lower_fov": -15.0,
+            "rotation_frequency": 20,
+            "noise_stddev": 0.03
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "name": "velodyne_32",
+            "spawn_point": {"x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "range": 100,
+            "channels": 32,
+            "points_per_second": 695000,
+            "upper_fov": 10.67,
+            "lower_fov": -30.67,
+            "rotation_frequency": 20,
+            "noise_stddev": 0.02
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "name": "velodyne_64",
+            "spawn_point": {"x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "range": 120,
+            "channels": 64,
+            "points_per_second": 1300000,
+            "upper_fov": 2.0,
+            "lower_fov": -24.8,
+            "rotation_frequency": 20,
+            "noise_stddev": 0.02
+        }
+    ]
+}

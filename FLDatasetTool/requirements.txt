@@ -1,0 +1,8 @@
+opencv-python>4.0
+carla >= 0.9.12
+numpy>1.21.0
+transforms3d~=0.3.1
+open3d==0.13.0
+pandas
+shapely
+networkx

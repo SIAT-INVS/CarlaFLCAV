@@ -1,0 +1,23 @@
+{
+    "actors":
+    [
+        {
+            "type": "vehicle.tesla.model3",
+            "name": "vehicle_1st",
+            "sensors_setting": "sensor_config_template.json",
+            "spawn_point": 73
+        },
+        {
+            "type": "vehicle.tesla.model3",
+            "name": "vehicle_2nd",
+            "sensors_setting": "sensor_config_template.json",
+            "spawn_point": 76
+        },
+        {
+            "type": "infrastructure",
+            "name": "tl_infra_01",
+            "sensors_setting": "sensor_config_simple.json",
+            "spawn_point": {"x": 40, "y": -240, "z": 4.0}
+        }
+    ]
+}
