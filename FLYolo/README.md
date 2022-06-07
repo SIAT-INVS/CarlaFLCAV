@@ -36,8 +36,7 @@ python3 sim_main.py
 python carla_pretrain_yolo.py pretrain
 ```
 
-6. Cloud-Edge Federated Learning
-We adopt the pretrain Model: './fedmodels/cloud/weights/pretrain.pt'
+6. Cloud-Edge Federated Learning. We adopt the pretrain Model: './fedmodels/cloud/weights/pretrain.pt'
 ```
 python carla_main_FLCAV_yolo.py
 ```
