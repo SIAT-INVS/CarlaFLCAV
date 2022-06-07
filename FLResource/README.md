@@ -31,6 +31,6 @@ python3 resource_alloc_multitask.py
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Qi Hao and Chengzhong Xu and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor},
   journal={arXiv preprint arXiv:2206.01748},
-  year={2022},
+  year={2022}
 }
 ```
