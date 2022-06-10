@@ -1,6 +1,5 @@
 ## FLPCDet: Federated Learning Point CLoud Detection
 Federated Learning Point CLoud Detection (FLPCDet) is based on Carla Simulation and OpenPCDet (See README_PCDET.md). 
-FLPCDET can reproduce results in the following papers:
 
 ## Install FLPCDet
 * FLPCDet is based on OpenPCDet (https://github.com/open-mmlab/OpenPCDet)
@@ -68,6 +67,6 @@ python test.py --cfg_file cfgs/kitti_models/town05_test/vehicle1232.yaml --ckpt 
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Qi Hao and Chengzhong Xu and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor},
   journal={arXiv preprint arXiv:2206.01748},
-  year={2022},
+  year={2022}
 }
 ```

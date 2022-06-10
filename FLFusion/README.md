@@ -1,6 +1,5 @@
 ## FLFusion: Federated Learning With Vehicle-Road Fusion 
 Federated Learning Vehicle-to-infrastructure Fusion (FLFusion) is based on Carla Simulation and CARLA_INVS (See https://github.com/zijianzhang/CARLA_INVS). 
-FLFUSION can reproduce results in the following papers:
 
 ## Quick Start
 
@@ -47,7 +46,6 @@ Format: python3 road/V2I_fusion.py data_folder frame_list label_folder(detection
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Qi Hao and Chengzhong Xu and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor},
   journal={arXiv:2206.01748},
-  year={2022},
-  publisher={IEEE}
+  year={2022}
 }
 ```

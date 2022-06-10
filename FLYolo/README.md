@@ -1,6 +1,5 @@
 ## FLYolo: Federated Learning You Look Only Once (FLYolo)
 Federated Learning You Look Only Once (FLYolo) is based on Carla Simulation and Yolov5 (See yolov5/README.md). 
-FLYOLO can reproduce results in the following papers:
 
 ## Install FLYOLO
 ```
@@ -63,8 +62,7 @@ python3 sim_main.py
 python carla_pretrain_yolo.py pretrain
 ```
 
-6. Cloud-Edge Federated Learning
-We adopt the pretrain Model: './fedmodels/cloud/weights/pretrain.pt'
+6. Cloud-Edge Federated Learning. We adopt the pretrain Model: './fedmodels/cloud/weights/pretrain.pt'
 ```
 python carla_main_FLCAV_yolo.py
 ```
@@ -81,6 +79,6 @@ python carla_main_FLCAV_yolo.py
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Qi Hao and Chengzhong Xu and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor},
   journal={arXiv preprint arXiv:2206.01748},
-  year={2022},
+  year={2022}
 }
 ```
