@@ -19,7 +19,7 @@
 - Python 3.8
 - CARLA 0.9.13
 - CUDA 11.3 (Nvidia Driver 470)
-- pytorch 1.10.0
+- Pytorch 1.10.0
 
 # Citation
 
@@ -35,5 +35,12 @@ CarlaFLCAV can reproduce results in the following papers:
 ```
 
 
-
 > **NOTE**：This is a Test version. Final version will be released after paper acceptance.
+
+### Authors
+
+[Shuai Wang](https://faculty.sustech.edu.cn/wangs3/en/)
+
+Chengyang Li
+
+
