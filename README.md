@@ -13,6 +13,16 @@
 
 * **Optimization based modules**: Network resource and road sensor pose optimization.
 
+# Test Environment
+
+- Ubuntu 20.04
+- Python 3.8
+- CARLA 0.9.13
+- CUDA 11.3 (Nvidia Driver 470)
+- pytorch 1.10.0
+
+# Citation
+
 CarlaFLCAV can reproduce results in the following papers:
 
 ```tex
@@ -24,12 +34,6 @@ CarlaFLCAV can reproduce results in the following papers:
 }
 ```
 
-# Test Environment
 
-- Ubuntu 20.04
-- Python 3.8
-- CARLA 0.9.13
-- CUDA 11.3 (Nvidia Driver 470)
-- pytorch 1.10.0
 
 > **NOTE**：This is a Test version. Final version will be released after paper acceptance.
