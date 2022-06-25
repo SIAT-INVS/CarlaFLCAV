@@ -24,9 +24,9 @@ CarlaFLCAV can reproduce results in the following papers:
 }
 ```
 
-# Test Environment
+**Test Environment
 
-- Ubuntu 18.04
+- Ubuntu 20.04
 - Python 3.8
 - CARLA 0.9.13
 - CUDA 11.3 (Nvidia Driver 470)
