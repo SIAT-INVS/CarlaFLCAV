@@ -39,8 +39,8 @@ CarlaFLCAV can reproduce results in the following papers:
 
 ### Authors
 
-[Shuai Wang](https://faculty.sustech.edu.cn/wangs3/en/)
+[Shuai Wang](https://github.com/bearswang)
 
-Chengyang Li
+[Chengyang Li](https://github.com/KevinLADLee)
 
 
