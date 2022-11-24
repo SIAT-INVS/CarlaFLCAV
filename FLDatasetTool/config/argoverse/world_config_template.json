@@ -1,0 +1,20 @@
+{
+    "frame_total": 50,
+    "frame_step": 1,
+    "map": "Town10HD_Opt",
+    "spectator_pose": {"x": -42, "y": 20.0, "z": 150, "roll": 0, "pitch":89.9, "yaw": -179.9},
+    "world_settings":
+    {
+        "fixed_delta_seconds": 0.1,
+        "max_substep_delta_time": 0.01,
+        "max_substeps": 16
+    },
+    "actor_settings": "actor_settings_template.json",
+    "traffic_light_setting":
+    {
+        "red_time": 1.0,
+        "yellow_time": 0.01,
+        "green_time": 2.0
+    }
+
+}

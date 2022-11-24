@@ -1,6 +1,13 @@
+import pickle
+
 import carla
 import argparse
 import matplotlib.pyplot as plt
+
+
+class Line:
+    x = []
+    y = []
 
 
 class MapVisualization:
@@ -9,6 +16,7 @@ class MapVisualization:
         self.world = self.carla_client.get_world()
         self.map = self.world.get_map()
         self.fig, self.ax = plt.subplots()
+        self.line_list = []
 
     def destroy(self):
         self.carla_client = None
@@ -27,6 +35,10 @@ class MapVisualization:
         for p in points:
             x.append(p.x)
             y.append(-p.y)
+        line = Line()
+        line.x = x
+        line.y = y
+        self.line_list.append(line)
         self.ax.plot(x, y, color='darkslategrey', markersize=2)
         return True
 
@@ -101,6 +113,11 @@ def main():
     viz.draw_spawn_points()
     viz.destroy()
     plt.axis('equal')
+
+    with open('/tmp/map_info.pkl', 'wb') as pickle_file:
+        # Output map visualization info to a pkl file
+        pickle.dump(viz.line_list, pickle_file)
+
     plt.show()
 
 
