@@ -34,8 +34,8 @@ CarlaFLCAV can reproduce results in the following papers:
 }
 ```
 
+Arxiv version: http://arxiv.org/abs/2206.01748
 
-> **NOTE**：This is a Test version. Final version will be released after paper acceptance.
 
 ### Authors
 
