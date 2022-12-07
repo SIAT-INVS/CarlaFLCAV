@@ -14,11 +14,10 @@
 * **Optimization based modules**: Network resource and road sensor pose optimization.
 
 # Demo
-![yolo](https://user-images.githubusercontent.com/38368612/206235127-e7680c66-8575-45c9-9907-0f3e1d704b74.gif)
-
 
 ![fusion](https://user-images.githubusercontent.com/38368612/206235843-e6b37409-0be7-460b-a94a-0694eba2e6fc.gif)
 
+**Cooperative perceptioin with road sensors for federated distillation** 
 
 # Test Environment
 
