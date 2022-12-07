@@ -15,17 +15,12 @@
 
 # Demo
 
-<img src="./gifs/second.gif" width = "400" alt="img1" align=center />
+<img src="./gifs/second.gif" width = "600" alt="img1" align=center />
 
-**Federated SECOND for 3D object detection using point clouds**
+<img src="./gifs/yolo.gif" width = "600" alt="img2" align=center />
 
-<img src="./gifs/yolo.gif" width = "400" alt="img2" align=center />
+<img src="./gifs/fusion.gif" width = "600" alt="img3" align=center />
 
-**Federated YOLOV5 for 2D object detection using RGB images**
-
-<img src="./gifs/fusion.gif" width = "400" alt="img3" align=center />
-
-**Cooperative perception with road sensors for federated distillation**
 
 # Test Environment
 
