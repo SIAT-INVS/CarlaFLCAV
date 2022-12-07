@@ -14,13 +14,7 @@
 * **Optimization based modules**: Network resource and road sensor pose optimization.
 
 # Demo
-
-<img src="./gifs/second.gif" width = "600" alt="name" align=center />
-
-<img src="./gifs/yolo.gif" width = "600" alt="name" align=center />
-
-<img src="./gifs/fusion.gif" width = "600" alt="name" align=center />
-
+![yolo](https://user-images.githubusercontent.com/38368612/206235127-e7680c66-8575-45c9-9907-0f3e1d704b74.gif)
 
 # Test Environment
 
