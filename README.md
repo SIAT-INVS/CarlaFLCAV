@@ -15,7 +15,11 @@
 
 # Demo
 
-<img src="./gifs/second.gif" width = "400" alt="name" align=center />
+<img src="./gifs/second.gif" width = "800" alt="img1" align=center />
+
+<img src="./gifs/yolo.gif" width = "800" alt="img2" align=center />
+
+<img src="./gifs/fusion.gif" width = "800" alt="img3" align=center />
 
 # Test Environment
 
