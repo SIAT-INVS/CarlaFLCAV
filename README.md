@@ -57,6 +57,11 @@ CarlaFLCAV can reproduce results in the following papers:
 Arxiv version: http://arxiv.org/abs/2206.01748
 
 
+## Acknowledgement
+
+* [CARLA Ros Bridge](https://github.com/carla-simulator/ros-bridge)
+* [CARLA_INVS](https://github.com/zijianzhang/CARLA_INVS)
+
 ### Authors
 
 [Shuai Wang](https://github.com/bearswang)
