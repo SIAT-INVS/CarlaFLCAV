@@ -15,14 +15,16 @@
 
 # Demo
 
+https://user-images.githubusercontent.com/38368612/206344921-f52956af-86bc-48b6-aee1-388febc233d7.mp4
 
-https://user-images.githubusercontent.com/38368612/206343806-a9d0a388-35de-4f66-8341-36675ae7217f.mp4
+**Federated SECOND for 3D point cloud object detection** 
+
+https://user-images.githubusercontent.com/38368612/206344904-d2d7d194-d104-4701-a771-a97a6136e3a6.mp4
 
 **Federated YOLOV5 for 2D image object detection** 
 
-https://user-images.githubusercontent.com/38368612/206343871-2f9d645c-5713-4b99-9303-46053a4436e4.mp4
 
-
+https://user-images.githubusercontent.com/38368612/206345017-5c8a764a-44fb-4282-b832-cb8e55090d7d.mp4
 
 **Cooperative perceptioin with road sensors for federated distillation** 
 
