@@ -15,7 +15,10 @@
 
 # Demo
 
-![fusion](https://user-images.githubusercontent.com/38368612/206235843-e6b37409-0be7-460b-a94a-0694eba2e6fc.gif)
+
+https://user-images.githubusercontent.com/38368612/206343806-a9d0a388-35de-4f66-8341-36675ae7217f.mp4
+
+
 
 **Cooperative perceptioin with road sensors for federated distillation** 
 
