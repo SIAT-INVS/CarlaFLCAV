@@ -18,6 +18,10 @@
 
 https://user-images.githubusercontent.com/38368612/206343806-a9d0a388-35de-4f66-8341-36675ae7217f.mp4
 
+**Federated YOLOV5 for 2D image object detection** 
+
+https://user-images.githubusercontent.com/38368612/206343871-2f9d645c-5713-4b99-9303-46053a4436e4.mp4
+
 
 
 **Cooperative perceptioin with road sensors for federated distillation** 
