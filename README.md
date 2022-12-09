@@ -52,6 +52,14 @@ CarlaFLCAV can reproduce results in the following papers:
   journal={IEEE Network},
   year={2022}
 }
+
+@article{EFL,
+  title={Edge federated learning via unit-modulus over-the-air computation},
+  author={Shuai Wang and Yuncong Hong and Rui Wang and Qi Hao and Yik-Chung Wu and Derrick Wing Kwan Ng},
+  journal={IEEE Transactions on Communications},
+  year={2022},
+  publisher={IEEE}
+}
 ```
 
 Arxiv version: http://arxiv.org/abs/2206.01748
