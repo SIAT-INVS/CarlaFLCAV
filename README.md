@@ -46,14 +46,14 @@ https://user-images.githubusercontent.com/38368612/206345017-5c8a764a-44fb-4282-
 CarlaFLCAV can reproduce results in the following papers:
 
 ```tex
-@article{FLCAV,
+@article{CarlaFLCAV,
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor and Qi Hao and Chengzhong Xu},
   journal={IEEE Network},
   year={2022}
 }
 
-@article{EFL,
+@article{CarlaOTAFL,
   title={Edge federated learning via unit-modulus over-the-air computation},
   author={Shuai Wang and Yuncong Hong and Rui Wang and Qi Hao and Yik-Chung Wu and Derrick Wing Kwan Ng},
   journal={IEEE Transactions on Communications},
