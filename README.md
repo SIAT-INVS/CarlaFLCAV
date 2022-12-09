@@ -59,8 +59,8 @@ Arxiv version: http://arxiv.org/abs/2206.01748
 
 ## Acknowledgement
 
-* [CARLA Ros Bridge](https://github.com/carla-simulator/ros-bridge)
-* [CARLA_INVS](https://github.com/zijianzhang/CARLA_INVS)
+* [Carla-ROS-Bridge](https://github.com/carla-simulator/ros-bridge)
+* [CarlaINVS](https://github.com/zijianzhang/CARLA_INVS)
 
 ### Authors
 
