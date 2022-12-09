@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/38368612/206344904-d2d7d194-d104-4701-
 
 **Federated YOLOV5 for 2D image object detection** 
 
-https://user-images.githubusercontent.com/38368612/206664620-585574f1-cd42-4ec5-9238-9075786eea1b.mp4
+https://user-images.githubusercontent.com/38368612/206665655-c8653bb0-3e25-4071-9797-8e76255b4eab.mp4
 
 **Federated LSTM for BEV trajectory prediction** 
 
