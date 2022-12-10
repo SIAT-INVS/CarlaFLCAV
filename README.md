@@ -53,7 +53,7 @@ CarlaFLCAV can reproduce results in the following papers:
   year={2022}
 }
 
-@article{CarlaOTAFL,
+@article{CarlaFLOTA,
   title={Edge federated learning via unit-modulus over-the-air computation},
   author={Shuai Wang and Yuncong Hong and Rui Wang and Qi Hao and Yik-Chung Wu and Derrick Wing Kwan Ng},
   journal={IEEE Transactions on Communications},
