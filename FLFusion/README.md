@@ -36,16 +36,5 @@ Format: python3 road/V2I_fusion.py data_folder frame_list label_folder(detection
 
 ## Acknowledgement
 
-* [CARLA Ros Bridge](https://github.com/carla-simulator/ros-bridge)
 * [CARLA_INVS](https://github.com/zijianzhang/CARLA_INVS)
 
-## Citation
-
-```latex
-@article{FLCAV,
-  title={Federated deep learning meets autonomous vehicle perception: Design and verification},
-  author={Shuai Wang and Chengyang Li and Qi Hao and Chengzhong Xu and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor},
-  journal={arXiv:2206.01748},
-  year={2022}
-}
-```
