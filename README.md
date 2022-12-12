@@ -62,8 +62,9 @@ CarlaFLCAV can reproduce results in the following papers:
 }
 ```
 
-Arxiv version: http://arxiv.org/abs/2206.01748
+CarlaFLCAV Arxiv version: http://arxiv.org/abs/2206.01748
 
+CarlaFLOTA Arxiv version: https://arxiv.org/abs/2101.12051
 
 ## Acknowledgement
 
