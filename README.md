@@ -67,6 +67,7 @@ Arxiv version: http://arxiv.org/abs/2206.01748
 
 ## Acknowledgement
 
+* [CARLA](https://github.com/carla-simulator)
 * [Carla-ROS-Bridge](https://github.com/carla-simulator/ros-bridge)
 * [CarlaINVS](https://github.com/zijianzhang/CARLA_INVS)
 
