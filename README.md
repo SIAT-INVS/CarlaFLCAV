@@ -72,7 +72,7 @@ CarlaFLOTA Arxiv version: https://arxiv.org/abs/2101.12051
 
 ## Acknowledgement
 
-* [CARLA](https://github.com/carla-simulator)
+* [Carla](https://github.com/carla-simulator)
 * [Carla-ROS-Bridge](https://github.com/carla-simulator/ros-bridge)
 * [CarlaINVS](https://github.com/zijianzhang/CARLA_INVS)
 
