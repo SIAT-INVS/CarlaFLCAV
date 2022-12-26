@@ -30,7 +30,7 @@ Run the following command to fuse the maps from the road sensors and the vehicle
 ```
 python3 road/V2I_fusion.py ./dataset/recordxxx img_list label00
 ```
-* The generated labels are then used for multi-stage training in FLPCDet.
+The generated labels are then used for multi-stage training in FLPCDet.
 Format: python3 road/V2I_fusion.py data_folder frame_list label_folder(detection_results, ground truth...)
 
 
