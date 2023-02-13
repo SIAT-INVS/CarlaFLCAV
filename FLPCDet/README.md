@@ -40,9 +40,9 @@ python setup.py develop
 python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/tesla339_dataset.yaml
 ```
 
-2. Multi-stage Training
+2. Federated learning under resource contraints for SECOND
 ```
-python sim_main.py
+python flcav_second.py -w 4096 -l 4096
 ```
 
 3.  Model Folders
