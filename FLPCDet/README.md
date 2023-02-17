@@ -9,6 +9,7 @@ Federated Learning Point CLoud Detection (FLPCDet) is based on Carla Simulation 
 1. Install dependencies, e.g.,
 ```
 pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install cvxpy
 ```
 
 2. Install OpenPCDet
