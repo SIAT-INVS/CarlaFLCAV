@@ -5,6 +5,7 @@ Federated Learning You Look Only Once (FLYolo) is based on Carla Simulation and 
 ```
 pip3 install opencv-python
 pip3 install -r yolov5/requirements.txt
+pip install cvxpy
 ```
 
 ## Example RawData Folder Structure 
@@ -33,12 +34,7 @@ rawdata
 
 example rawdata: [download link](https://github.com/SIAT-INVS/CarlaFLCAV/releases/download/preview/fl_yolo_raw_data.tar.xz)
 
-## Federated learning under resource constraints for YOLOV5
-```
-python3 flcav_yolo.py -w 4096 -l 4096
-```
-
-## Quick Start for YOLOV5
+## Quick Test for YOLOV5
 
 1. Train Yolov5
 ```
@@ -55,6 +51,11 @@ python3 yolov5/detect.py --source 'raw_data/test/vehicle.tesla.model3_173/yolo_d
 3. Evaluate Result
 ```
 python3 yolov5/val.py --data raw_data/test/vehicle.tesla.model3_173/yolo_coco_carla.yaml --weights yolov5s.pt 
+```
+
+## Federated learning under resource constraints for YOLOV5
+```
+python3 flcav_yolo.py -w 4096 -l 4096
 ```
 
 ## Acknowledgement
