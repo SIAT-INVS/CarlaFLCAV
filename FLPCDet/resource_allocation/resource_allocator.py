@@ -47,8 +47,8 @@ class Resource_Allocator:
         budget_constraints = [cp.sum(cp.sum(u)) <= wireless_budget, cp.sum(cp.sum(v)) <= wireline_budget]
         x_constraints = [x[i] <= u[0][i]/D[i] for i in range(n)]
         x_constraints += [x[i] <= v[0][i]/D[i] for i in range(n)]
-        r_constraints = [r[i] <= u[1][i]/(3*DNNSIZE[i]) for i in range(n)]
-        t_constraints = [t[i] <= v[2][i]/(3*DNNSIZE[i]) for i in range(n)]
+        r_constraints = [r[i] <= u[1][i]/(7*DNNSIZE[i]) for i in range(n)]
+        t_constraints = [t[i] <= v[2][i]/(2*DNNSIZE[i]) for i in range(n)]
         rt_constraints = [r[i] == INTERVAL * t[i] for i in range(n)]
         slack_constraints = [slack[i] >= a[i] * cp.power(alpha[i] * x[i] \
                 + beta[i] * (y[i] + z[i]) * (1 - cp.inv_pos(t[i]+1)), -b[i]) for i in range(n)]
