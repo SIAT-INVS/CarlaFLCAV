@@ -12,13 +12,14 @@ class Resource_Allocator:
         self.b = [1.23, 0.62, 0.10]
         self.D = [0.7, 0.7, 1.6] # MB
         self.DNNSIZE = [23, 14, 60] # MB
-        self.alpha = [0.5, 0.5, 0.5] # domain shift
-        self.beta = [0.1, 0.1, 0.1] # fed degragation
+        self.alpha = [0.1, 0.1, 0.1] # domain shift
+        self.beta = [0.5, 0.5, 0.5] # fed degragation
         self.n = 3 # number of tasks
         self.s = 3 # number of stages
         self.y = [4*500, 4*1000, 4*100] # number of samples at edge Town03
         self.z = [3*500, 3*1000, 3*100] # number of samples at edge Town05
         self.INTERVAL = 1
+        self.task_weights = [0.1, 0.15, 0.75]
         # wireless_budget = 4096 # 4MB
         # wireline_budget = 4096 # 4MB
 
@@ -64,7 +65,7 @@ class Resource_Allocator:
         constraints += rt_constraints
         constraints += slack_constraints
 
-        objective = cp.Minimize(cp.sum(slack))
+        objective = cp.Minimize(cp.sum(self.task_weights @ slack))
         # The multi-modal multi-stage joint optimization
         prob = cp.Problem(objective, constraints)
         # The optimal objective value is returned by `prob.solve()`.
