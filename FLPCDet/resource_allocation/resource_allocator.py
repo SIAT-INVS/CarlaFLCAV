@@ -19,7 +19,7 @@ class Resource_Allocator:
         self.y = [4*500, 4*1000, 4*100] # number of samples at edge Town03
         self.z = [3*500, 3*1000, 3*100] # number of samples at edge Town05
         self.INTERVAL = 1
-        self.task_weights = [0.1, 0.15, 0.75]
+        self.task_weights = [1/3, 1/3, 1/3]
         # wireless_budget = 4096 # 4MB
         # wireline_budget = 4096 # 4MB
 
