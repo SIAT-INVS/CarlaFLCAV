@@ -32,7 +32,7 @@ rawdata
 
 ```
 
-example rawdata: [download link](https://github.com/SIAT-INVS/CarlaFLCAV/releases/download/preview/fl_yolo_raw_data.tar.xz)
+example rawdata: [FLYolo.tar.gz](https://hkustgz-my.sharepoint.com/:f:/g/personal/cli386_connect_hkust-gz_edu_cn/Em2lXlioF8dEjxLiAjH20bQBZwZaDTgfYT4QwHpD4sv5YA?e=vaNCl6)
 
 ## Quick Test for YOLOV5
 
@@ -55,7 +55,7 @@ python3 yolov5/val.py --data raw_data/test/vehicle.tesla.model3_173/yolo_coco_ca
 
 ## Federated learning under resource constraints for YOLOV5
 ```
-python3 flcav_yolo.py -w 4096 -l 4096
+python3 flcav_yolo.py -w 4096 -l 4096 --batch_size 4 --epoch 10 --pretrain_model yolov5s.pt
 ```
 
 ## Acknowledgement
