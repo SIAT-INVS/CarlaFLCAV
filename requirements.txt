@@ -1,0 +1,17 @@
+open3d>=0.10 
+pillow==9.5.0
+plyfile 
+notebook 
+numpy 
+matplotlib  
+opencv-python 
+seaborn 
+tensorboard 
+llvmlite 
+numba 
+tensorboardX 
+easydict  
+pyyaml 
+scikit-image 
+tqdm 
+SharedArray 

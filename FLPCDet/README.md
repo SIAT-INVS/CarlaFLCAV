@@ -37,20 +37,23 @@ python setup.py develop
 ## Quick Start
 
 1. Prepare dataset
+
+Download our example dataset first and extract to `data` folder: [FLPCDet.tar.gz](https://hkustgz-my.sharepoint.com/:f:/g/personal/cli386_connect_hkust-gz_edu_cn/Em2lXlioF8dEjxLiAjH20bQBZwZaDTgfYT4QwHpD4sv5YA?e=vaNCl6)
+
 ```
 python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/tesla339_dataset.yaml
 ```
 
-2. Federated learning under resource contraints for SECOND
+1. Federated learning under resource contraints for SECOND
 ```
-python flcav_second.py -w 4096 -l 4096
+python flcav_second.py -w 4096 -l 4096 --batch_size=16 --epoch=20
 ```
 
-3.  Model Folders
+1.  Model Folders
 * Fedmodel: Cloud and edge federated models
 * Output: Local models at each autonomous vehicles
 
-4. Testing
+1. Testing
 ```
 cd tools;
 python test.py --cfg_file cfgs/kitti_models/town05_test/vehicle1232.yaml --ckpt ../fedmodel/cloud/global.pth

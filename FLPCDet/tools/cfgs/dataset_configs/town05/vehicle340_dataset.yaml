@@ -1,5 +1,4 @@
 DATASET: 'KittiDataset'
-# DATA_PATH: '../data/kitti'
 DATA_PATH: '../data/town05/vehicle.tesla.model3_340'
 
 POINT_CLOUD_RANGE: [0, -40, -3, 70.4, 40, 1]
