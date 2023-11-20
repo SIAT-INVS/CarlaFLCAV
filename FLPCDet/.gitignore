@@ -1,0 +1,5 @@
+build
+data/*
+!data/README.md
+fedmodel
+output/*

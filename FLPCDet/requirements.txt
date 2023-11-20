@@ -1,4 +1,4 @@
-numpy<=1.20
+numpy>=1.22
 llvmlite
 numba
 torch>=1.1
@@ -9,3 +9,4 @@ scikit-image
 tqdm
 torchvision
 SharedArray
+pillow<10.1.0

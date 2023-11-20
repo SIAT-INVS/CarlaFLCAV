@@ -20,10 +20,12 @@ class FLCAV_SECOND:
         self.pretrained_data_path = 'pretrain'
         self.federated_data_path = ['town03', 'town05']
         self.num_sample = 5
-        self.CLOUD_ITER_TOTAL = 1
+        self.CLOUD_ITER_TOTAL = 5
         self.EDGE_ITER_TOTAL = 1
         self.wireless_budget = args.wireless_budget
         self.wireline_budget = args.wireline_budget
+        self.batch_size = args.batch_size
+        self.epochs = args.epochs
 
 
     def pretrain(self, num_sample):
@@ -36,7 +38,8 @@ class FLCAV_SECOND:
 
         for v in vehicle_list:
             cfg_yaml = 'cfgs/kitti_models/'+data_path + '/' + v 
-            sp.run(['bash', '-c', 'cd tools; python pretrain.py --cfg_file ' + cfg_yaml + ' --batch_size 1 --epochs 1 --spsz '+str(s)]) # local model updates at vehicle v 
+            sp.run(['bash', '-c', 'cd tools; python pretrain.py --cfg_file {} --batch_size {} --epochs {} --spsz {}'.format(cfg_yaml, self.batch_size, self.epochs, s)]) # local model updates at vehicle v
+            # sp.run(['bash', '-c', 'cd tools; python pretrain.py --cfg_file ' + cfg_yaml + ' --batch_size 1 --epochs 20 --spsz '+str(s)]) # local model updates at vehicle v 
             # finish one experiment
             print('---------------------------------Number of samples %r is completed.'%s)
 
@@ -205,6 +208,19 @@ def main():
         default=4096,
         type=int,
         help='Wireless resource constraint in MB')
+    
+    argparser.add_argument(
+        '--batch_size',
+        default=1,
+        type=int,
+        help='Batch size for training')
+    
+    argparser.add_argument(
+        '--epochs',
+        default=1,
+        type=int,
+        help='Number of epochs for training')
+
     args = argparser.parse_args()
 
     flcav_second = FLCAV_SECOND(args)

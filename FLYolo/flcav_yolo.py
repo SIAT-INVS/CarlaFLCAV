@@ -25,6 +25,9 @@ class FLCAV_YOLO:
         self.EDGE_ITER_TOTAL = 1
         self.wireless_budget = args.wireless_budget
         self.wireline_budget = args.wireline_budget
+        self.pretrain_model = args.pretrain_model
+        self.batch_size = args.batch_size
+        self.epochs = args.epochs
 
 
     def pretrain(self, num_sample):
@@ -37,9 +40,7 @@ class FLCAV_YOLO:
         for v in vehicle_list:
             dataset = 'raw_data/' + data_path + '/' + v + '/yolo_coco_carla.yaml'
             savefolder = 'fedmodels/' + data_path + '/' + str(s)
-            pretrain_model = 'yolov5s.pt'
-            sp.run(['bash', '-c', 'python3 yolov5/train_local.py --img 640 --batch 8 --epochs 50 --data ' + dataset + ' --cfg yolov5/models/yolov5s.yaml --weights '+ pretrain_model + \
-                ' --save ' + savefolder + ' --spsz '+str(s)])
+            sp.run(['bash', '-c', 'python3 yolov5/train_local.py --img 640 --batch {} --epochs {} --data {}  --cfg yolov5/models/yolov5s.yaml --weights {} --save {} --spsz {}'.format(self.batch_size, self.epochs, dataset, self.pretrain_model, savefolder, str(s))])
 
         # save the model to the cloud
         filename = savefolder + '/weights/best.pt'
@@ -245,6 +246,25 @@ def main():
         default=4096,
         type=int,
         help='Wireless resource constraint in MB')
+    
+    argparser.add_argument(
+        '--batch_size',
+        default=1,
+        type=int,
+        help='Batch size for training')
+    
+    argparser.add_argument(
+        '--epochs',
+        default=1,
+        type=int,
+        help='Epochs for training')
+    
+    argparser.add_argument(
+        '--pretrain_model',
+        default='yolov5s.pt',
+        type=str,
+        help='Pretrained model for training')
+    
     args = argparser.parse_args()
 
     flcav_yolo = FLCAV_YOLO(args)

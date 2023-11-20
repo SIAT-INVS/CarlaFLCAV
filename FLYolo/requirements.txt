@@ -3,3 +3,7 @@ plyfile
 notebook
 numpy
 matplotlib
+pillow==9.5.0
+opencv-python
+seaborn
+tensorboard
