@@ -50,8 +50,10 @@ CarlaFLCAV can reproduce results in the following papers:
   title={Federated deep learning meets autonomous vehicle perception: Design and verification},
   author={Shuai Wang and Chengyang Li and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor and Qi Hao and Chengzhong Xu},
   journal={IEEE Network},
-  doi={10.1109/MNET.104.2100403},
-  year={2022}
+  year={2023},
+  volume={37},
+  number={3},
+  pages={16--25}
 }
 
 @article{CarlaFLOTA,
@@ -61,8 +63,7 @@ CarlaFLCAV can reproduce results in the following papers:
   year={2022},
   volume={70},
   number={5},
-  pages={3141--3156},
-  publisher={IEEE}
+  pages={3141--3156}
 }
 ```
 
