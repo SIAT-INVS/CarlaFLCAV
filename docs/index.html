@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3c5488">
+<meta name="description" content="CarlaFLCAV: Federated Deep Learning Meets Autonomous Vehicle Perception. Architecture, CARLA experiments, sim-to-real verification, and open-source code.">
+<meta property="og:title" content="CarlaFLCAV · Federated Deep Learning Meets Autonomous Vehicle Perception">
+<meta property="og:image" content="https://siat-invs.github.io/CarlaFLCAV/assets/network-architecture.webp">
+<title>CarlaFLCAV · Federated Deep Learning Meets Autonomous Vehicle Perception</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%233c5488'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Arial' font-size='25' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="project.css"><script src="project.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="#top">CarlaFLCAV</a>
+<button class="menu-toggle" hidden aria-expanded="false" aria-controls="nav-panel" type="button">Menu <span aria-hidden="true">☰</span></button>
+<div class="nav-panel" id="nav-panel"><div class="nav-links"><a href="#overview">Overview</a><a href="#architecture">Architecture</a><a href="#carla">CARLA</a><a href="#results">Results</a><a href="#demos">Demos</a><a href="#citation">Citation</a></div><a href="https://github.com/SIAT-INVS/CarlaFLCAV">GitHub ↗</a></div>
+</nav></header>
+<main id="main">
+<section class="paper-intro wrap" id="top">
+<p class="project-name">CarlaFLCAV</p>
+<h1>Federated Deep Learning Meets<br class="desktop-break"> Autonomous Vehicle Perception:<br class="desktop-break"> Design and Verification</h1>
+<p class="venue">IEEE Network · 2023</p>
+<p class="authors"><span><a href="https://github.com/bearswang">Shuai Wang</a><sup>1*</sup>,</span> <span><a href="https://github.com/KevinLADLee">Chengyang Li</a><sup>2*</sup>,</span> <span>Derrick Wing Kwan Ng<sup>3</sup>,</span> <span>Yonina C. Eldar<sup>4</sup>,</span> <span>H. Vincent Poor<sup>5</sup>,</span> <span>Qi Hao<sup>6</sup>,</span> and <span>Chengzhong Xu<sup>7</sup></span></p>
+<p class="affiliations"><span><sup>1</sup>Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences</span> <span><sup>2</sup>HKUST (Guangzhou)</span> <span><sup>3</sup>University of New South Wales</span> <span><sup>4</sup>Weizmann Institute of Science</span> <span><sup>5</sup>Princeton University</span> <span><sup>6</sup>Southern University of Science and Technology; Shenzhen Research Institute of Trustworthy Autonomous Systems</span> <span><sup>7</sup>University of Macau</span></p>
+<p class="equal">* Equal contribution</p>
+<div class="paper-links"><a class="button primary" href="https://arxiv.org/abs/2206.01748">arXiv:2206.01748</a><a class="button" href="https://arxiv.org/pdf/2206.01748">Paper PDF</a><a class="button" href="https://github.com/SIAT-INVS/CarlaFLCAV">Code ↗</a><a class="button star" href="https://github.com/SIAT-INVS/CarlaFLCAV/stargazers" ><span>GitHub</span><span aria-hidden="true">★</span><span data-stars="total">331</span></a></div>
+<figure class="paper-figure"><a href="assets/network-architecture.webp" target="_blank" rel="noopener" aria-label="Enlarge: Vehicle, road sensor, edge server, and cloud connections in FLCAV"><img src="assets/network-architecture.webp" width="1971" height="955" alt="Vehicle, road sensor, edge server, and cloud connections in FLCAV" decoding="async"></a><figcaption><strong>Figure 1.</strong> Vehicle–road–edge–cloud networking for collaborative perception.</figcaption></figure></section>
+<section class="section tinted" id="overview"><div class="wrap"><h2>Overview</h2>
+<p>Corner cases and visual occlusions make autonomous vehicle perception difficult in open driving scenarios. <strong>Federated learning assisted connected autonomous vehicles (FLCAV)</strong> learn from data distributed across vehicles and road sensors by exchanging model parameters and perception outputs.</p>
+<p>CarlaFLCAV provides a CARLA-based platform for studying this system: synchronized multi-modal data generation, perception models, federated training, and resource allocation. The paper connects network design and sensor placement to the accuracy of downstream driving tasks.</p>
+<figure class="paper-figure"><a href="assets/perception-tasks.webp" target="_blank" rel="noopener" aria-label="Enlarge: Weather classification, traffic sign recognition, object detection, and trajectory prediction with their sensors and DNNs"><img src="assets/perception-tasks.webp" width="1973" height="907" alt="Weather classification, traffic sign recognition, object detection, and trajectory prediction with their sensors and DNNs" decoding="async" loading="lazy"></a><figcaption><strong>Figure 2.</strong> Four perception tasks, their sensing modalities, and example neural networks.</figcaption></figure></div></section>
+<section class="section" id="architecture"><div class="wrap"><h2>Architecture</h2><h3>Three stages of federated training</h3>
+<p>Cloud pretraining initializes the perception model. Edge federated learning combines vehicle updates with road-sensor knowledge. Cloud federated learning then aggregates the regional models, with personalization for individual regions.</p>
+<figure class="paper-figure"><a href="assets/federated-training.webp" target="_blank" rel="noopener" aria-label="Enlarge: Cloud pretraining, edge federated learning, and cloud federated learning with vehicle and road sensor exchanges"><img src="assets/federated-training.webp" width="1935" height="669" alt="Cloud pretraining, edge federated learning, and cloud federated learning with vehicle and road sensor exchanges" decoding="async" loading="lazy"></a><figcaption><strong>Figure 3.</strong> Training across vehicles, edge servers, and the cloud.</figcaption></figure><h3>Network resources and road sensor placement</h3>
+<p><strong>Multi-layer graph resource allocation (MLGRA)</strong> distributes communication resources across training stages, tasks, and sensing modalities to reduce perception error. <strong>Vehicle-road contrastive sensor placement (VRCSP)</strong> prioritizes locations where vehicle and road-sensor detections disagree, helping reveal occluded objects.</p>
+<figure class="paper-figure"><a href="assets/road-sensor-placement.webp" target="_blank" rel="noopener" aria-label="Enlarge: Traffic-volume-based and vehicle-road contrastive sensor placement compared in CARLA"><img src="assets/road-sensor-placement.webp" width="1976" height="981" alt="Traffic-volume-based and vehicle-road contrastive sensor placement compared in CARLA" decoding="async" loading="lazy"></a><figcaption><strong>Figure 4.</strong> Road sensor placement based on traffic volume versus vehicle–road perception disagreement.</figcaption></figure></div></section>
+<section class="section tinted" id="carla"><div class="wrap"><h2>CARLA Simulation</h2>
+<h3>A platform for system-level experiments</h3><p>CarlaFLCAV combines dataset generation, perception tasks, federated learning frameworks, and optimization modules. Data collection includes synchronized sensor observations, calibration, and annotations.</p><p>The Data Recorder is based on our <a href="https://github.com/KevinLADLee/carla_dataset_tools">carla_dataset_tools</a> repository.</p><p><a href="https://github.com/SIAT-INVS/CarlaFLCAV">Browse code and installation instructions ↗</a></p>
+<h3>Evaluation across three towns</h3>
+<p>The single-task experiment trains SECOND for 3D object detection. Training data come from Town02, Town05, and Town03; evaluation uses 2,432 Town05 point clouds. Wireless and wireline uplinks each have a 4 GB communication budget.</p>
+<div class="table-scroll"><table><thead><tr><th>Stage</th><th>Map</th><th>Point-cloud samples</th></tr></thead><tbody><tr><td>Cloud pretraining</td><td>Town02</td><td>5,000</td></tr><tr><td>Edge FL</td><td>Town05</td><td>4 CAVs × 500</td></tr><tr><td>Cloud FL</td><td>Town03</td><td>3 CAVs × 500</td></tr><tr><td>Evaluation</td><td>Town05</td><td>2,432</td></tr></tbody></table></div>
+</div></section>
+<section class="section" id="results"><div class="wrap"><h2>Experimental Results</h2>
+<h3>Single-task 3D object detection</h3>
+<p>MLGRA with contrastive road sensor placement achieves <strong>84.58% mAP</strong>; adding device selection reaches <strong>86.76% mAP</strong>. The figure compares the training configurations and their communication resource allocations.</p>
+<figure class="paper-figure"><a href="assets/single-task-results.webp" target="_blank" rel="noopener" aria-label="Enlarge: Six single-task training configurations compared by object detection mAP and network resource allocation"><img src="assets/single-task-results.webp" width="1961" height="837" alt="Six single-task training configurations compared by object detection mAP and network resource allocation" decoding="async" loading="lazy"></a><figcaption><strong>Figure 5.</strong> Single-task object detection and resource allocation.</figcaption></figure><h3>Multi-task perception</h3>
+<p>The proposed allocation achieves <strong>99.0% weather classification accuracy</strong>, <strong>88.8% traffic sign mAP</strong>, and <strong>78.16% object detection mAP</strong> in the multi-task experiment.</p>
+<figure class="paper-figure"><a href="assets/multi-task-results.webp" target="_blank" rel="noopener" aria-label="Enlarge: Multi-task perception results with task-specific resource allocations and example predictions"><img src="assets/multi-task-results.webp" width="1973" height="597" alt="Multi-task perception results with task-specific resource allocations and example predictions" decoding="async" loading="lazy"></a><figcaption><strong>Figure 6.</strong> Weather classification, traffic sign recognition, and object detection.</figcaption></figure><h3>From CARLA to real-world KITTI data</h3><p>To examine transfer beyond simulation, the paper trains SECOND on <strong>3,000 CARLA point clouds for 60 epochs</strong> and evaluates it on KITTI data, reporting <strong>58% mAP at an IoU threshold of 0.5</strong>.</p>
+
+</div></section>
+<section class="section tinted" id="demos"><div class="wrap"><h2>Demos</h2><div class="demo-grid">
+<figure class="demo"><video controls playsinline preload="metadata" aria-label="Federated SECOND: 3D point-cloud object detection"><source src="https://user-images.githubusercontent.com/38368612/206344921-f52956af-86bc-48b6-aee1-388febc233d7.mp4#t=0.1" type="video/mp4"></video><figcaption><strong>Federated SECOND</strong><span>3D point-cloud object detection</span></figcaption></figure>
+<figure class="demo"><video controls playsinline preload="metadata" aria-label="Federated YOLOv5: 2D image object detection"><source src="https://user-images.githubusercontent.com/38368612/206344904-d2d7d194-d104-4701-a771-a97a6136e3a6.mp4#t=0.1" type="video/mp4"></video><figcaption><strong>Federated YOLOv5</strong><span>2D image object detection</span></figcaption></figure>
+<figure class="demo"><video controls playsinline preload="metadata" aria-label="Federated LSTM: BEV trajectory prediction"><source src="https://user-images.githubusercontent.com/38368612/206665655-c8653bb0-3e25-4071-9797-8e76255b4eab.mp4#t=0.1" type="video/mp4"></video><figcaption><strong>Federated LSTM</strong><span>BEV trajectory prediction</span></figcaption></figure>
+<figure class="demo"><video controls playsinline preload="metadata" aria-label="Vehicle–road cooperation: Road sensors for federated distillation"><source src="https://user-images.githubusercontent.com/38368612/206345017-5c8a764a-44fb-4282-b832-cb8e55090d7d.mp4#t=0.1" type="video/mp4"></video><figcaption><strong>Vehicle–road cooperation</strong><span>Road sensors for federated distillation</span></figcaption></figure>
+</div></div></section>
+<section class="section" id="citation"><div class="wrap"><h2>Citation</h2><p>If CarlaFLCAV supports your research, please cite our paper.</p><div class="citation"><button type="button" data-copy="bibtex">Copy BibTeX</button><pre><code id="bibtex">@article{CarlaFLCAV,
+  title={Federated deep learning meets autonomous vehicle perception: Design and verification},
+  author={Shuai Wang and Chengyang Li and Derrick Wing Kwan Ng and Yonina C. Eldar and H. Vincent Poor and Qi Hao and Chengzhong Xu},
+  journal={IEEE Network},
+  year={2023},
+  volume={37},
+  number={3},
+  pages={16--25}
+}</code></pre></div><details><summary>Related paper: over-the-air federated learning</summary><p><a href="https://arxiv.org/abs/2101.12051">Edge Federated Learning via Unit-Modulus Over-the-Air Computation</a> · IEEE Transactions on Communications, 2022</p><div class="citation"><button type="button" data-copy="bibtex-ota">Copy BibTeX</button><pre><code id="bibtex-ota">@article{CarlaFLOTA,
+  title={Edge federated learning via unit-modulus over-the-air computation},
+  author={Shuai Wang and Yuncong Hong and Rui Wang and Qi Hao and Yik-Chung Wu and Derrick Wing Kwan Ng},
+  journal={IEEE Transactions on Communications},
+  year={2022},
+  volume={70},
+  number={5},
+  pages={3141--3156}
+}</code></pre></div></details><p id="copy-status" role="status" aria-live="polite"></p></div></section>
+<section class="section tinted" id="contributors"><div class="wrap">
+<h2>Contributors</h2>
+<p><strong>Shuai Wang</strong>: <a href="https://github.com/bearswang">bearswang</a></p>
+<p><strong>Chengyang Li</strong>: <a href="https://github.com/KevinLADLee">KevinLADLee</a></p>
+</div></section>
+</main>
+<footer><div class="wrap"><strong>CarlaFLCAV</strong><span><a href="#contributors">Contributors</a> · <a href="https://github.com/SIAT-INVS/CarlaFLCAV">GitHub</a> · <a href="https://github.com/KevinLADLee/carla_dataset_tools">Data Recorder</a> · <a href="https://arxiv.org/abs/2206.01748">Paper</a></span></div></footer>
+</body></html>

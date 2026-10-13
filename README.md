@@ -1,7 +1,25 @@
-# CarlaFLCAV
+<div align="center">
+
+<h1>CarlaFLCAV</h1>
+<p><strong>Federated Learning for Connected Autonomous Vehicle Perception</strong></p>
+<p>An open-source CARLA platform for multi-modal data collection and federated perception.</p>
+
+<p>
+  <a href="https://siat-invs.github.io/CarlaFLCAV/"><img src="https://img.shields.io/badge/Website-CarlaFLCAV-3c5488?style=for-the-badge" alt="Project Website" height="28"></a>
+  <a href="https://arxiv.org/abs/2206.01748"><img src="https://img.shields.io/badge/arXiv-2206.01748-b31b1b?style=for-the-badge" alt="arXiv:2206.01748" height="28"></a>
+  <a href="#citation"><img src="https://img.shields.io/badge/Cite-CarlaFLCAV-2ea44f?style=for-the-badge" alt="Cite CarlaFLCAV" height="28"></a>
+  <a href="https://github.com/KevinLADLee/carla_dataset_tools"><img src="https://img.shields.io/badge/Data-Recorder-3c5488?style=for-the-badge" alt="Data Recorder" height="28"></a>
+  <a href="https://github.com/SIAT-INVS/CarlaFLCAV/stargazers"><img src="docs/assets/combined-stars.svg" alt="GitHub stars" height="28"></a>
+</p>
+
+<p><a href="#overview">Overview</a> · <a href="#demo">Demos</a> · <a href="#test-environment">Environment</a> · <a href="#citation">Citation</a></p>
+
+</div>
 
 ![carla_flcav](https://user-images.githubusercontent.com/15060244/171803004-f2f699d5-1a18-48b5-ac12-672a045ba837.png)
 
+
+## Overview
 
 **CarlaFLCAV** is an open-source FLCAV simulation platform based on CARLA simulator that supports: 
 
@@ -13,7 +31,9 @@
 
 * **Optimization based modules**: Network resource and road sensor pose optimization.
 
-# Demo
+The Data Recorder is based on our [carla_dataset_tools](https://github.com/KevinLADLee/carla_dataset_tools) repository.
+
+## Demo
 
 https://user-images.githubusercontent.com/38368612/206344921-f52956af-86bc-48b6-aee1-388febc233d7.mp4
 
@@ -33,7 +53,7 @@ https://user-images.githubusercontent.com/38368612/206345017-5c8a764a-44fb-4282-
 
 
 
-# Test Environment
+## Test Environment
 
 - Ubuntu 20.04
 - Python 3.8
@@ -41,7 +61,7 @@ https://user-images.githubusercontent.com/38368612/206345017-5c8a764a-44fb-4282-
 - CUDA 11.3 (Nvidia Driver 470)
 - Pytorch 1.10.0
 
-# Citation
+## Citation
 
 CarlaFLCAV can reproduce results in the following papers:
 
