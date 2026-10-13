@@ -9,7 +9,7 @@
   <a href="https://arxiv.org/abs/2206.01748"><img src="https://img.shields.io/badge/arXiv-2206.01748-b31b1b?style=for-the-badge" alt="arXiv:2206.01748" height="28"></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Cite-CarlaFLCAV-2ea44f?style=for-the-badge" alt="Cite CarlaFLCAV" height="28"></a>
   <a href="https://github.com/KevinLADLee/carla_dataset_tools"><img src="https://img.shields.io/badge/Data-Recorder-3c5488?style=for-the-badge" alt="Data Recorder" height="28"></a>
-  <a href="https://github.com/SIAT-INVS/CarlaFLCAV/stargazers"><img src="docs/assets/combined-stars.svg" alt="GitHub stars" height="28"></a>
+  <a href="#repositories"><img src="docs/assets/combined-stars.svg" alt="Total GitHub stars" height="28"></a>
 </p>
 
 <p><a href="#overview">Overview</a> · <a href="#demo">Demos</a> · <a href="#test-environment">Environment</a> · <a href="#citation">Citation</a></p>
@@ -90,6 +90,11 @@ CarlaFLCAV can reproduce results in the following papers:
 CarlaFLCAV Arxiv version: http://arxiv.org/abs/2206.01748
 
 CarlaFLOTA Arxiv version: https://arxiv.org/abs/2101.12051
+
+## Repositories
+
+- [CarlaFLCAV](https://github.com/SIAT-INVS/CarlaFLCAV)
+- [Carla Dataset Tools](https://github.com/KevinLADLee/carla_dataset_tools)
 
 ## Acknowledgement
 
